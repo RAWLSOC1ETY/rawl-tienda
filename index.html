@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda R.A.W.L.</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f2f2f2; }
+    .producto { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    .producto img { width: 100%; max-width: 300px; border-radius: 10px; }
+    h1 { text-align: center; margin-bottom: 30px; }
+    button { background: black; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; }
+    button:hover { background: #333; }
+  </style>
+</head>
+<body>
+  <h1>🔥 R.A.W.L. STORE 🔥</h1>
+
+  <div class="producto">
+    <h2>Camiseta Negra "Unfollow"</h2>
+    <img src="https://via.placeholder.com/300x300?text=Unfollow" alt="Camiseta Unfollow">
+    <p>Precio: $67.000 COP</p>
+    <button onclick="ordenar('Camiseta Negra \"Unfollow\"')">Comprar</button>
+  </div>
+
+  <div class="producto">
+    <h2>Camiseta Blanca "Be More Original"</h2>
+    <img src="https://via.placeholder.com/300x300?text=Be+More+Original" alt="Camiseta Be More Original">
+    <p>Precio: $67.000 COP</p>
+    <button onclick="ordenar('Camiseta Blanca \"Be More Original\"')">Comprar</button>
+  </div>
+
+  <script>
+    function ordenar(producto) {
+      const mensaje = `Hola, quiero ordenar el siguiente producto de R.A.W.L.%0A%0A👕 Producto: ${producto}%0A👤 Nombre: [tu nombre]%0A📏 Talla: [tu talla]%0A📦 Dirección: [tu dirección]%0A💳 Método de pago: Nequi / Daviplata / Bancolombia (Cuenta de ahorros)`;
+      const telefono = '573239994412';
+      const url = `https://wa.me/${telefono}?text=${mensaje}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
