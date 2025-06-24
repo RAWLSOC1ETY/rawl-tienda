@@ -1,0 +1,1 @@
+body { background-color: black; color: white; font-family: sans-serif; } h1 { animation: fadeIn 1.5s ease; } @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
