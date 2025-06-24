@@ -1,1 +1,35 @@
-body { background: black; color: white; font-family: sans-serif; }
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background: url('wallpage.png') no-repeat center center fixed;
+  background-size: cover;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.logo {
+  height: 60px;
+}
+nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.producto {
+  margin: 2rem;
+  text-align: center;
+}
+button {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
